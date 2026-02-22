@@ -1,7 +1,7 @@
 # Questions and Answers
 
 **1) What is the difference between getElementById, getElementsByClassName, and query Selector/query selector All?** <br>
-Ans : getElementById() searches one elemnet based on its id and returns single element. In contrast getElementsByClassName() searches a group of elements based on their class and returns a list of elements known as HTML collection. It’s a live collection of elements. <br>
+Ans : getElementById() searches one element based on its id and returns single element. In contrast getElementsByClassName() searches a group of elements based on their class and returns a list of elements known as HTML collection. It’s a live collection of elements. <br>
 querySelector() searches first matching element and stops. On the other hand querySelectorAll() searches all matching elements and returns a static list of all elments called NodeList.
 querySelector() and querySelectorAll() are the most flexible because they accept any CSS selector like (.class, #id, or div).
 
