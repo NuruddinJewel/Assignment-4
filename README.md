@@ -6,7 +6,7 @@ querySelector() searches first matching element and stops. On the other hand que
 querySelector() and querySelectorAll() are the most flexible because they accept any CSS selector like (.class, #id, or div).
 
 **2) How do you create and insert a new element into the DOM?** <br>
-Ans : To create and insert new element into DOM the following steps are to be followed:
+Ans : To create and insert new element into DOM the following steps are to be followed: <br>
 First use document.createElement() method to generate the element in memory. Such as :const newButton=document.createElement(‘button’). <br>
 Second, we can add content or attributes like textContent or inner HTML . Such as: newButton.textContent= ‘Button Clicked’. <br> 
 Third step is to find the target location where we can place the new element. Such as :  const parentDiv = document.getElementById(‘conatiner’).<br>
