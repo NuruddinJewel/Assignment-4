@@ -26,15 +26,15 @@
     <div class=" grid grid-cols-1 lg:grid-cols-3 gap-2">
     <div class="bg-white ml-51 pt-2 mb-2 mr-32 pl-6 pr-6">
     <p class="text-[#9c8f8f]">Total</p>
-    <p class="pt-2 pb-1 text-[#002c5c]">8</p>
+    <p id="total" class="pt-2 pb-1 text-[#002c5c]">8</p>
     </div>
     <div class="bg-white ml-51 pt-2 mb-2 mr-32 pl-6 pr-6">
     <p class=" text-[#9c8f8f]">Interview</p>
-    <p class="pt-2 pb-1 text-[#017b20]">0</p>
+    <p id="interview" class="pt-2 pb-1 text-[#017b20]">0</p>
     </div>   
     <div class="bg-white ml-51 pt-2 mb-2 mr-32 pl-6 pr-6">
     <p class=" text-[#9c8f8f]">Rejected</p>
-    <p class="pt-2 pb-1 text-[#961200]">0</p>
+    <p id="rejected" class="pt-2 pb-1 text-[#961200]">0</p>
     </div>
     </div>
     </header>
@@ -46,19 +46,19 @@
         <!-- <p class="text-sm  ml-51 mt-4 mb-6 gap-8 ">8jobs</p> -->
         </div>
     </section>
-    <section>
+    <section class="grid grid-cols-3 container">
         <div class="ml-51">
-        <button class="btn btn-outline btn-info max-w-16 max-h-6 btn-sm bg-white hover:bg-blue-600 text-[black]">All</button>
-        <button class="btn btn-outline btn-info max-w-16 max-h-6 btn-sm bg-white hover:bg-blue-600 text-[black]">Interview</button>
-        <button class="btn btn-outline btn-info max-w-16 max-h-6 btn-sm bg-white hover:bg-blue-600 text-[black]">Rejected</button>
+        <button class="btn btn-outline btn-info max-w-16 max-h-6 btn-sm bg-white hover:bg-blue-600 text-[black] id ='btn-1'">All</button>
+        <button class="btn btn-outline btn-info max-w-16 max-h-6 btn-sm bg-white hover:bg-blue-600 text-[black] id ='btn-2'">Interview</button>
+        <button class="btn btn-outline btn-info max-w-16 max-h-6 btn-sm bg-white hover:bg-blue-600 text-[black] id ='btn-3'">Rejected</button>
         </div>
     </section>
-    <section class="UCard bg-zinc-50">
+    <section id="cards" class=" bg-zinc-50 grid grid-cols-1 container">
         <!-- 1 -->
     <div class="card w-5xl bg-base-100 card-md shadow-sm mt-5 ml-51">
   <div class="card-body">
     <h2 class="card-title">Mobile First Corp
-      <button  class=" ml-198 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+      <button id="C" class=" ml-197 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
     </h2>
@@ -66,8 +66,8 @@
     <p> Remote • Full-time • $130,000 - $175,000</p>
     <p> Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="A" class="btn btn-outline btn-success">Interview</button>
+        <button id="B" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -75,7 +75,7 @@
    <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
     <h2 class="card-title">WebFlow Agency
-      <button  class=" ml-196 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+      <button id="G" class=" ml-196 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
     </h2>
@@ -83,8 +83,8 @@
     <p>Los Angeles, CA • Part-time • $80,000 - $120,000</p>
     <p>Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="E" class="btn btn-outline btn-success">Interview</button>
+        <button id="F"class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -92,7 +92,7 @@
   <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
     <h2 class="card-title">DataViz Solutions
-      <button  class="ml-195 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+      <button id="J" class="ml-195 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
     </h2>
@@ -100,8 +100,8 @@
     <p> Boston, MA • Full-time • $125,000 - $165,000</p>
     <p>Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="H" class="btn btn-outline btn-success">Interview</button>
+        <button id="I" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -110,7 +110,7 @@
    <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
     <h2 class="card-title">StartupXYZ
-      <button  class=" ml-209 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+      <button id="M" class=" ml-209 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
     </h2>
@@ -118,8 +118,8 @@
     <p>Remote • Full-time • $120,000 - $160,000Remote • Full-time • $120,000 - $160,000</p>
     <p> Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="K" class="btn btn-outline btn-success">Interview</button>
+        <button id="L" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -129,7 +129,7 @@
   <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
     <h2 class="card-title">CloudFirst Inc
-    <button  class=" ml-203 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+    <button id="P" class=" ml-203 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
     </h2>
@@ -137,8 +137,8 @@
     <p>Seattle, WA • Full-time • $140,000 - $190,000</p>
     <p> Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="N" class="btn btn-outline btn-success">Interview</button>
+        <button id="O" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -148,7 +148,7 @@
   <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
     <h2 class="card-title">Innovation Labs
-        <button  class=" ml-198 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+        <button id="S" class=" ml-198 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
         <img src="./icons/delete.png" alt=""> 
         </button>
     </h2>
@@ -156,8 +156,8 @@
     <p> Austin, TX • Full-time • $110,000 - $150,000</p>
     <p> Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="Q" class="btn btn-outline btn-success">Interview</button>
+        <button id="R" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -166,7 +166,7 @@
 
   <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
-    <h2 class="card-title">MegaCorp Solutions
+    <h2 id="V" class="card-title">MegaCorp Solutions
       <button  class=" ml-188 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
@@ -175,8 +175,8 @@
     <p>New York, NY • Full-time • $130,000 - $170,00</p>
     <p> Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="T" class="btn btn-outline btn-success">Interview</button>
+        <button id="U" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
@@ -186,7 +186,7 @@
   <div class="card w-5xl bg-base-100 card-md shadow-sm mt-4 ml-51">
   <div class="card-body">
     <h2 class="card-title">TechCorp Industries
-      <button  class=" ml-189 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
+      <button id="Y" class=" ml-189 rounded-lg hover:bg-gray-100 active:bg-red-100 active:scale-95 transition-all duration-150">
   <img src="./icons/delete.png" alt="">
     </button>
     </h2>
@@ -194,13 +194,14 @@
     <p> San Francisco, CA • Full-time • $130,000 - $175,000</p>
     <p> We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
         <div>
-        <button class="btn btn-outline btn-success">Interview</button>
-        <button class="btn btn-outline btn-error">Rejected</button>
+        <button id="W" class="btn btn-outline btn-success">Interview</button>
+        <button id="X" class="btn btn-outline btn-error">Rejected</button>
         </div>
     </div>
   </div>
 
 </section>
     </main>
+    <script src="script/count.js"></script>
 </body>
 </html>
