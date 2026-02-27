@@ -7,20 +7,30 @@ function showTab(tabName) {
         function moveCard(cardId, destination) {
             const card = document.getElementById(cardId);
             const targetArea = document.getElementById('section-' + destination);
-            
+            const statusBtn = document.getElementById('status-btn-' + cardId);
+            const actionButtons = card.querySelector('.action-buttons');
             // Move the element physically in the DOM
             targetArea.appendChild(card);
 
-            // Hide Interview/Reject buttons if not in the 'All' section
-            const buttons = card.querySelector('.action-buttons');
-            if (destination === 'all') {
-                buttons.style.display = 'flex';
-            } else {
-                buttons.style.display = 'none';
-            }
+            if (destination === 'interview') {
+        statusBtn.innerText = "Interview";
+        statusBtn.className = "btn btn-soft btn-success no-animation cursor-default ";
+        actionButtons.style.display = 'none'; //Hide the bottom buttons
+    } 
+    else if (destination === 'rejected') {
+        statusBtn.innerText = "Rejected";
+        statusBtn.className = "btn btn-soft btn-error no-animation cursor-default";
+        actionButtons.style.display = 'none'; //Hide the bottom buttons
+    } 
+    else {
+        // This runs when the delete icon is clicked (Reset to All)
+        statusBtn.innerText = "Not Applied";
+        statusBtn.className = "btn btn-soft btn-primary no-animation cursor-default";
+        actionButtons.style.display = 'flex'; //Show the bottom buttons
+    }
 
-            updateStats();
-        }
+    updateStats();
+}
 
         function updateStats() {
             // Count cards in each section container
